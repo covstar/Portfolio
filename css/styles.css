@@ -1,0 +1,20 @@
+header{
+    background: url("https://covstar.sirv.com/Portfolio_imgs/D_About.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.profile img{
+    transform: scaleX(-1);
+}
+
+.active{
+    background-color: white;
+    color: #c92c6d;
+}
+.active:hover{
+    background-color: #c92c6d;
+    color: white;
+    transition: all .3s;
+}

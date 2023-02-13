@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- css links  -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+        integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body class="relative font-Open_sans">
+
+    <!-- nav section  -->
+    <nav class="flex md:px-8 md:py-4 sm:p-4 bg-maroon text-grey md:text-xl sticky top-0 border-b border-b-grey z-50">
+        <!-- user picture  -->
+        <div class="mr-auto profile">
+            <a href=""><img class="md:w-16 md:h-16 sm:w-14 sm:h-14 rounded-full border-grey border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/my_picture.jpg" width="433" height="577" alt="" /></a>
+        </div>
+    
+        <div class="md:flex md:gap-x-20 sm:text-center my-auto sm:text-sm">
+    
+            <!-- current time  -->
+            <div class=" ">
+                <p id="time"></p>
+            </div>
+    
+            <!-- current location  -->
+            <div>
+                <p id="location"></p>
+            </div>
+    
+        </div>
+    
+        <!-- Portfolio -->
+        <div class="ml-auto my-auto font-bold md:text-2xl sm:text-xl">
+            <a href="">
+                <p>Portfolio</p>
+            </a>
+        </div>
+    
+    </nav>
+
+    <!-- header section  -->
+    <header class="md:pt-10% md:px-8 bg-opacity-90 relative sm:pt-10% sm:px-4">
+        <!-- background overlay  -->
+        <div class="absolute w-full h-full bg-black bg-opacity-60 -z-0  top-0 left-0 right-0 bottom-0"></div>
+
+        <!-- Header writer up -->
+        <div class="text-left md:text-5xl font-bold sm:text-2xl text-grey z-20 relative">
+
+            <p class="leading-normal">Hi! I'm Covstar, </p>
+            <p class="leading-normal">An Experienced Frontend Developer.</p>
+            <p class="leading-normal"> I am proficient in: <mark class="px-4 sm:px-2 bg-grey text-maroon" id="array-item"></mark> </p>
+            
+        </div>
+
+        <!-- nav link  -->
+        <nav class="relative z-10 text-grey md:pt-10% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-20% sm:pb-4">
+            <ul class="flex gap-x-8  sm:flex-wrap gap-y-4">
+                <li>
+                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 active">About</button>
+                </li>
+                <li>
+                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200">Projects</button>
+                </li>
+                <li>
+                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200">Resume</button>
+                </li>
+                <li>
+                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all">Contact</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About me section -->
+    <section class="md:my-3% md:px-8 sm:my-10% sm:px-8 md:grid grid-cols-2 gap-x-16 gap-y-6  w-full">
+        <!-- bio summary -->
+        <div class=" md:ml-3% sm:mb-8">
+            <ul>
+                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Bio</li>
+            </ul>
+            <p class=" sm:text-sm sm:leading-6 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+                A passionate frontend developer. I specialize in crafting visually stunning and engaging websites and web applications
+                that deliver an unparalleled user experience. My expertise in HTML, CSS, and JavaScript, combined with my proficiency in
+                libraries like jQuery and Bootstrap, allows me to create dynamic and interactive designs that are both responsive and
+                visually pleasing.
+            </p>
+        </div>
+
+        <!-- Experience  -->
+        <div class="md:ml-3% sm:mb-8">
+            <ul>
+                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Experiences</li>
+            </ul>
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+                <div class="flex sm:text-sm font-bold">
+                    <p class="ml-3% md:text-xl ">Frontend Developer (freelancing)</p>
+                    <p class="my-auto ml-auto">2020 - Present</p>
+                </div>
+               
+                <ul class="mt-3% list-disc mx-4 sm:text-sm sm:leading-6  sm:p-4">
+                    <li>
+                        Designed and implemented the user-facing side of websites.
+                    </li>
+                    <li>
+                        Responsible for layout, visual design, and interactive elements.
+                    </li>
+                    <li>
+                        Used HTML, CSS, and JavaScript to create user interfaces.
+                    </li>
+                    <li>
+                        Provided website maintenance and enhancements.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="md:ml-3%">
+            <ul>
+                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">Skills
+                </li>
+            </ul>
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+               <ul class="list-disc mx-4 sm:text-sm sm:leading-6  sm:p-4">
+                <li>HTML, CSS, and JavaScript programming languages</li>
+                <li>Familiarity with frontend frameworks such as React, Vue, etc.</li>
+                <li>Strong understanding of responsive design and cross-browser compatibility</li>
+                <li>Experience with version control systems, such as Git.</li>
+                <li>Understanding of web development concepts such as DOM manipulation and web architecture</li>
+                <li>Knowledge of browser developer tools and debugging techniques</li>
+                <li>Understanding of web performance optimization techniques</li>
+                <li>Familiarity with accessibility guidelines and best practices</li>
+                <li>Experience with JavaScript libraries such as jQuery.</li>
+                <li>Strong problem-solving, debugging and troubleshooting skills.</li>
+               </ul>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="md:ml-3% sm:mt-8">
+            <ul>
+                <li
+                    class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">
+                    Tools
+                </li>
+            </ul>
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-5%">
+                <ul class="flex flex-wrap text-7xl gap-x-8 gap-y-6 justify-center text-maroon mx-4  sm:leading-6  sm:p-4">
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-bootstrap"></i></li>
+                    <li><i class="fa-brands fa-vuejs"></i>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Javascript links -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/type.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/location.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+<footer>
+    <div class="bg-blackhey md:py-6 md:px-8 sm:pt-8 sm:pb-4 sm:px-4 text-gray-400">
+        <ul class="flex gap-x-5 text-2xl text-maroon">
+            
+            <li class="hover:text-grey"><a href="https://github.com/covstar"><i class="fa-brands fa-github"></i></a></li>
+            <li class="hover:text-grey"><a href="https://instagram.com/okechukwuvictor"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="hover:text-grey"><a href="https://twitter.com/covstar_"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="hover:text-grey"><a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a></li>
+            <li class="hover:text-grey"><a href="https://linkedin.com/in/okechukwu-victor"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="hover:text-grey"><a href="https://app.slack.com/client/T0195LMKD1R/D04M2CM30U8/rimeto_profile/U04KD5FQFNG"><i class="fa-brands fa-slack"></i></a></li>
+        </ul>
+
+        <p class="pt-3% sm:text-sm">2023 © Copyright. Allrights Reserved.</p>
+    </div>
+</footer>
+</html>
