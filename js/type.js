@@ -1,5 +1,5 @@
 // The array of strings you want to split and display
-      var myArray = ["HTML", "CSS", "JavaScript", "React", "and Vue."];
+      var myArray = ["HTML", "CSS", "JavaScript", "Tailwindcss", "React"];
       
       // The current word you want to display
       var currentWord = "";
@@ -44,7 +44,7 @@
           if(myArray.length > 0) {
             typingIntervalId = setInterval(displayNextLetter, typingInterval);
           } else {
-            myArray = ["HTML", "CSS", "JavaScript", "React", "and Vue."];
+            myArray = ["HTML", "CSS", "JavaScript", "Tailwindcss", "React"];
             typingIntervalId = setInterval(displayNextLetter, typingInterval);
           }
         }
