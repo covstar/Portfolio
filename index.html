@@ -20,30 +20,41 @@
     <!-- nav section  -->
     <nav class="flex md:px-8 md:py-4 sm:p-4 bg-maroon text-grey md:text-xl sticky top-0 border-b border-b-grey z-50">
         <!-- user picture  -->
-        <div class="mr-auto profile">
+        <div class="mr-auto profile flex gap-x-2 md:gap-x-4">
             <a href=""><img class="md:w-16 md:h-16 sm:w-14 sm:h-14 rounded-full border-grey border-2"
                     src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" width="433" height="577" alt="" /></a>
+            <ul class="font-bold sm:text-sm mt-2">
+                <li class="">Covstar</li>
+                <ul class="flex gap-x-2 md:gap-x-5 justify-center md:text-base">
+                    <li class="text-neutral-300"><a href="tel:+2348109119717"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="mailto:okechukwuvictor012@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+                
+            </ul>
         </div>
     
-        <div class="md:flex md:gap-x-20 sm:text-center my-auto sm:text-sm">
-    
-            <!-- current time  -->
-            <div class=" ">
-                <p id="time"></p>
-            </div>
-    
-            <!-- current location  -->
-            <div>
-                <p id="location"></p>
-            </div>
-    
-        </div>
+        
     
         <!-- Portfolio -->
-        <div class="ml-auto my-auto font-bold text-5xl ">
-            <a href="">
-                <a href="https://github.com/covstar"><i class="fa-brands fa-github"></i></a>
-            </a>
+        <div class="ml-auto my-auto font-bold  flex gap-x-2 md:gap-x-4">
+
+            <div class="md:flex md:gap-x-10 sm:text-center my-auto sm:text-sm">
+            
+                <!-- current time  -->
+                <div>
+                    <p id="time"></p>
+                </div>
+            
+                <!-- current location  -->
+                <div>
+                    <p id="location"></p>
+                </div>
+            
+            </div>
+
+            
+                <a class="md:text-5xl sm:text-3xl" href="https://github.com/covstar"><i class="fa-brands fa-github"></i></a>
+            
         </div>
     
     </nav>
@@ -92,7 +103,7 @@
             <ul>
                 <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Bio</li>
             </ul>
-            <p class=" sm:text-sm sm:leading-6 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+            <p class=" sm:text-sm sm:leading-6 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 A passionate frontend developer. I specialize in crafting visually stunning and engaging websites and web applications
                 that deliver an unparalleled user experience. My expertise in HTML, CSS, and JavaScript, combined with my proficiency in
                 libraries like jQuery and Bootstrap, allows me to create dynamic and interactive designs that are both responsive and
@@ -105,7 +116,7 @@
             <ul>
                 <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Experiences</li>
             </ul>
-            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 <div class="flex sm:text-sm font-bold">
                     <p class="ml-3% md:text-xl ">Frontend Developer (freelancing)</p>
                     <p class="my-auto ml-auto">2020 - Present</p>
@@ -134,7 +145,7 @@
                 <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">Skills
                 </li>
             </ul>
-            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4">
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                <ul class="list-disc mx-4 sm:text-sm sm:leading-6  sm:p-4">
                 <li>HTML, CSS, and JavaScript programming languages</li>
                 <li>Familiarity with frontend frameworks such as React, Vue, etc.</li>
@@ -172,6 +183,224 @@
 
     </section>
 
+    <!-- projects section  -->
+    <section class="md:my-3% md:px-8 sm:my-10% sm:px-8 project_section hidden">
+
+        <!-- project 1  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2" src="https://covstar.sirv.com/Portfolio_imgs/loopstudios-desktop-preview.jpg" alt="loopstudios">
+                
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm"><a href="">Github</a></li>
+                    <li class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm"><a href="">Live</a></li>
+                </ul>
+            </div>
+
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the landing page and get it looking as close to the UI design as possible. This
+                project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.</p>
+            </div>
+        </div>
+
+        <!-- project 2  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/hahlama-desktop-preview.jpg" alt="hahlama">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a></li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a></li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 3  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/sunnyside-desktop-preview.jpg" alt="sunnyside">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 4  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/huddle-desktop-preview.jpg" alt="huddle">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 5  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/fylo-desktop-preview.jpg" alt="fylo">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 6  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/launch-desktop-preview.jpg" alt="launch">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 7  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/blogr-desktop-preview.jpg" alt="blogr">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+        <!-- project 8  -->
+        <div class="md:flex gap-x-12 mb-10%">
+            <!-- project img  -->
+            <div class="md:w-1/2">
+                <img class="rounded-md border-maroon border-2"
+                    src="https://covstar.sirv.com/Portfolio_imgs/loopstudios-desktop-preview.jpg" alt="loopstudios">
+        
+                <ul class="flex gap-x-6 pt-4 font-semibold">
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Github</a>
+                    </li>
+                    <li
+                        class="bg-maroon hover:bg-grey hover:text-maroon transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm">
+                        <a href="">Live</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- project texts  -->
+            <div class="md:w-1/2 md:text-3xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+                <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2">The goal of this project was to build out the
+                    landing page and get it looking as close to the UI design as possible. This
+                    project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
 
 
 
