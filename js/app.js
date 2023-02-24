@@ -35,21 +35,3 @@ $(document).ready(function(){
 
 });
 
-// scroll to top function
-$ ('.scrollTop').click (function () {
-  $ ('html, body').animate (
-    {
-      scrollTop: 0,
-    },
-    'slow'
-  );
-  return false;
-});
-
-window.onscroll = function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    $ ('.scrollTop').css ('display', 'block');
-  } else {
-    $ ('.scrollTop').css ('display', 'none');
-  }
-};
