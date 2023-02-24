@@ -774,6 +774,10 @@ video {
   --tw-bg-opacity: 0.9;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -784,10 +788,6 @@ video {
 
 .p-5\%{
   padding: 5%;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-10{
@@ -897,13 +897,13 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-red-200{
-  --tw-shadow-color: #fecaca;
+.shadow-maroon{
+  --tw-shadow-color: #c92c6d;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-maroon{
-  --tw-shadow-color: #c92c6d;
+.shadow-red-200{
+  --tw-shadow-color: #fecaca;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -950,6 +950,16 @@ video {
   .sm\:my-30\%{
     margin-top: 30%;
     margin-bottom: 30%;
+  }
+
+  .sm\:my-40{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .sm\:my-40\%{
+    margin-top: 40%;
+    margin-bottom: 40%;
   }
 
   .sm\:mb-8{
@@ -1054,9 +1064,9 @@ video {
     line-height: 2.25rem;
   }
 
-  .sm\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .sm\:text-lg{
@@ -1067,11 +1077,6 @@ video {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:leading-6{
