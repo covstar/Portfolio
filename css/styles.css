@@ -1,5 +1,5 @@
 header{
-    background: url("https://covstar.sirv.com/Portfolio_imgs/D_About.png");
+    background: url("https://covstar.sirv.com/Portfolio_imgs/M_About.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -17,4 +17,11 @@ header{
     background-color: #c92c6d;
     color: white;
     transition: all .3s;
+}
+
+.neumorphism{
+    border-radius: 10px;
+        background: linear-gradient(145deg, #f0f0f0, #ffffff);
+        box-shadow: 0px 20px 30px #c92c6d49,
+            -20px -20px 30px #ffffff;
 }
