@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
-<body class="relative font-Open_sans">
+<body class="relative font-Open_sans bg-headImg bg-fixed bg-no-repeat bg-cover">
+    <div class="absolute w-full h-full bg-white -z-10 bg-opacity-70"></div> <!-- body overlay -->
+
 
     <!-- nav section  -->
     <nav class="flex md:px-8 md:py-4 sm:p-4 bg-maroon text-grey md:text-xl sticky top-0 border-b border-b-grey z-50">
@@ -95,15 +97,15 @@
     </header>
 
     <!-- About me section -->
-    <section class="md:my-3% md:px-8 sm:my-10% sm:px-8 md:grid grid-cols-2 gap-x-16 gap-y-6 About_section">
+    <section class="md:my-3% md:px-8 sm:my-10% sm:px-8 md:grid grid-cols-2 gap-x-16 gap-y-6 About_section ">
 
         <div class="mx-auto sm:mb-8">
             <img class="rounded-full md:w-64 md:h-64 sm:w-40 sm:h-40 border-4 border-maroon mx-auto" src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" alt="">
         </div>
         <!-- bio summary -->
-        <div class=" md:ml-3% sm:mb-8">
+        <div class=" md:ml-3% sm:mb-8 bg-white p-4">
             <ul>
-                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Bio</li>
+                <li class="list-inside list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Bio</li>
             </ul>
             <p class=" sm:text-sm sm:leading-6 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 A passionate frontend developer. I specialize in crafting visually stunning and engaging websites and web applications
@@ -114,9 +116,9 @@
         </div>
 
         <!-- Experience  -->
-        <div class="md:ml-3% sm:mb-8">
+        <div class="md:ml-3% sm:mb-8 bg-white p-4">
             <ul>
-                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Experiences</li>
+                <li class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2">Experiences</li>
             </ul>
             <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 <div class="flex md:text-xl sm:text-sm font-bold tb:text-sm">
@@ -142,9 +144,9 @@
         </div>
 
         <!-- Skills -->
-        <div class="md:ml-3%">
+        <div class="md:ml-3% bg-white p-4">
             <ul>
-                <li class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">Skills
+                <li class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">Skills
                 </li>
             </ul>
             <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
@@ -164,10 +166,10 @@
         </div>
 
         <!-- Tools -->
-        <div class="md:ml-3% sm:mt-8">
+        <div class="md:ml-3% sm:mt-8 bg-white p-4">
             <ul>
                 <li
-                    class="list-disc md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">
+                    class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-maroon border-b-2 border-b-maroon border-dashed pb-2 ">
                     Tools
                 </li>
             </ul>
@@ -434,7 +436,7 @@
 
     <section class="md:my-10% md:px-8 sm:my-40% sm:px-8 resume_section hidden">
         <div class="sm:text-center">
-            <a class="bg-maroon text-grey hover:text-maroon hover:border-2 border-maroon hover:bg-grey transition-all delay-200 px-10 py-5 text-2xl sm:text-lg rounded-md" href="./src/Okechukwu_victor's_resume.pdf" download="Okechukwu_victor's_resume">Download resume <i class="fa-regular fa-file-pdf"></i></a>
+            <a class="bg-maroon text-grey hover:text-maroon hover:border-2 border-maroon hover:bg-grey transition-all delay-200 px-10 py-5 text-2xl sm:text-lg rounded-md shadow-md shadow-blackhey" href="./src/Okechukwu_victor's_resume.pdf" download="Okechukwu_victor's_resume">Download resume <i class="fa-regular fa-file-pdf"></i></a>
         </div>
     </section>
 
@@ -450,7 +452,7 @@
 
 
     <!-- whatsapp  -->
-    <div class="fixed bottom-24 right-4  text-green-800 text-7xl sm:text-5xl z-50">
+    <div class="fixed bottom-24 right-4  text-green-700 text-7xl sm:text-5xl z-50">
         <a 
             href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a>
     </div>

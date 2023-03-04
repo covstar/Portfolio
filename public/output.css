@@ -573,6 +573,10 @@ video {
   z-index: 50;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -636,8 +640,20 @@ video {
   width: 100%;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-outside{
+  list-style-position: outside;
+}
+
 .list-disc{
   list-style-type: disc;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .grid-cols-2{
@@ -767,12 +783,53 @@ video {
   background-color: rgb(201 44 109 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
 }
 
 .bg-opacity-90{
   --tw-bg-opacity: 0.9;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-70{
+  --tw-bg-opacity: 0.7;
+}
+
+.bg-headImg{
+  background-image: url('https://covstar.sirv.com/Portfolio_imgs/M_project.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
+.bg-scroll{
+  background-attachment: scroll;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-4{
@@ -785,6 +842,10 @@ video {
 
 .p-5\%{
   padding: 5%;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-10{
@@ -883,14 +944,30 @@ video {
   color: rgb(201 44 109 / var(--tw-text-opacity));
 }
 
+.text-green-700{
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-red-200{
   --tw-shadow-color: #fecaca;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-blackhey{
+  --tw-shadow-color: #332c39;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -952,20 +1029,16 @@ video {
     margin-top: 2rem;
   }
 
-  .sm\:h-14{
-    height: 3.5rem;
+  .sm\:h-10{
+    height: 2.5rem;
   }
 
   .sm\:h-40{
     height: 10rem;
   }
 
-  .sm\:h-10{
-    height: 2.5rem;
-  }
-
-  .sm\:w-14{
-    width: 3.5rem;
+  .sm\:w-10{
+    width: 2.5rem;
   }
 
   .sm\:w-40{
@@ -974,22 +1047,6 @@ video {
 
   .sm\:w-full{
     width: 100%;
-  }
-
-  .sm\:w-1{
-    width: 0.25rem;
-  }
-
-  .sm\:w-8{
-    width: 2rem;
-  }
-
-  .sm\:w-9{
-    width: 2.25rem;
-  }
-
-  .sm\:w-10{
-    width: 2.5rem;
   }
 
   .sm\:flex-wrap{
