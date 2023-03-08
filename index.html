@@ -174,7 +174,7 @@
                 </li>
             </ul>
             <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-5%">
-                <ul class="flex flex-wrap text-7xl sm:text-4xl gap-x-8 gap-y-6 justify-center text-maroon mx-4  sm:leading-6  sm:p-4">
+                <ul class="flex flex-wrap text-7xl sm:text-4xl gap-x-4 gap-y-6 justify-center text-maroon mx-4  sm:leading-6  sm:p-4">
                     <li><i class="fa-brands fa-html5"></i></li>
                     <li><i class="fa-brands fa-css3-alt"></i></li>
                     <li><i class="fa-brands fa-square-js"></i></li>
@@ -459,7 +459,7 @@
 
     <!-- contact section  -->
 
-    <section class="md:my-3% md:px-8 sm:my-10% sm:px-8 contact_section hidden">
+    <section class="md:my-3% md:px-8 sm:my-10%  contact_section hidden">
 
         <!-- contact me header  -->
         <div class="relative mx-auto text-center">
@@ -468,36 +468,89 @@
         </div>
 
         <!-- contact form and address  -->
-        <div class="sm:mt-15%">
-            <div>
-                <span class="text-maroon font-bold md:text-2xl">CONTACT</span>
-                <h1 class="md:text-4xl sm:text-2xl font-extrabold text-blackhey">I WANT TO HEAR FROM YOU!</h1>
-                <p class="sm:text-sm text-blackhey font-medium">I'm always eager to hear from potential clients, collaborators, or anyone interested in my work. If you have a project you'd like to discuss, or just want to say hello, please don't hesitate to use the contact form below.</p>
-                
-                <div class="sm:mt-10% ">
-                    <form action="https://formbold.com/s/3K7kl" method="POST">
-                              <div class="sm:flex  w-full sm:justify-between">
-                                <div>
-                                    <input type="text" name="name" placeholder="Full Name" class="w-full outline-none h-8 placeholder:text-xs p-2">
-                                </div>
-                                   
+        <div class="sm:mt-10% md:mt-5% bg-blackhey bg-opacity-90 px-8 py-8 md:flex gap-x-8">
 
-                                <div class="">
-                                    <input type="email" name="email" placeholder="Email" class="w-full outline-none h-8 placeholder:text-xs p-2">
-                                </div>
-                              </div>
+            <div class="md:w-1/2">
+                <span class="text-maroon font-extrabold md:text-2xl">CONTACT</span>
+                <h1 class="md:text-4xl sm:text-2xl font-extrabold text-grey">I WANT TO HEAR FROM YOU!</h1>
+                <p class="sm:text-xs text-grey font-medium tracking-wide">I'm always eager to hear from potential clients, collaborators, or anyone interested in my work. If you have a project you'd like to discuss, or just want to say hello, please don't hesitate to use the contact form below.</p>
+                
+                <div class="sm:mt-10% md:mt-5%">
+                    <form action="https://formbold.com/s/3K7kl" method="POST">
+                              
+                        <div class="md:flex gap-x-8">
+                            <div class="w-full">
+                                <input type="text" name="name" placeholder="Full Name"
+                                    class="w-full outline-none h-8 sm:placeholder:text-xs placeholder:text-maroon sm:p-2 md:p-4 rounded">
+                            </div>
+                            
+                            
+                            <div class="sm:mt-5%  w-full">
+                                <input type="email" name="email" placeholder="Email"
+                                    class="w-full outline-none h-8 sm:placeholder:text-xs placeholder:text-maroon sm:p-2 md:p-4 rounded">
+                            </div>
+                        </div>
+                                
+                              
                                         
 
-                                <div class="sm:mt-5%">
-                                    <textarea name="message" placeholder="Leave a message" class="w-full h-32 placeholder:text-xs p-2"></textarea>
+                                <div class="sm:mt-5% md:mt-3%">
+                                    <textarea name="message" placeholder="Leave a message" class="w-full h-32 sm:placeholder:text-xs outline-none placeholder:text-maroon md:p-4 p-2 rounded"></textarea>
                                 </div>
 
-                                <div class="sm:mt-5%">
-                                    <button type="submit" class="bg-maroon text-grey sm:px-8 sm:py-2">Send</button>
+                                <div class="sm:mt-5% md:mt-3%">
+                                    <button type="submit" class="bg-maroon text-grey hover:text-maroon font-semibold border-maroon hover:bg-grey transition-all delay-200 sm:px-8 sm:py-2 md:px-10 md:py-2 md:text-xl rounded">Send</button>
                                 </div>
                                
                             </form>
                 </div>
+            </div>
+
+            <!-- other method of reaching out  -->
+            <div class="sm:mt-20% md:mt-5% md:w-1/2 md:pl-10% md:pt-5%">
+
+                <ul>
+                    <!-- phone part  -->
+                    <li>
+                        <ul class="flex gap-x-4">
+                            <li class=""><i class="fa-solid fa-phone text-4xl sm:text-2xl text-maroon"></i></li>
+                            <li>
+                                <ul class="my-auto">
+                                    <li class="text-xl font-semibold text-white">Call Me</li>
+                                    <li class="text-grey sm:text-sm"><a href="tel:+2348109119717">+2348109119717</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- email part  -->
+                    <li class="sm:mt-5% md:mt-5%">
+                        <ul class="flex gap-x-4">
+                            <li class=""><i class="fa-solid fa-envelope-open-text text-4xl sm:text-2xl text-maroon"></i></li>
+                            <li>
+                                <ul class="my-auto">
+                                    <li class="text-xl font-semibold text-white">Email Me</li>
+                                    <li class="text-grey sm:text-sm"><a href="mailto:okechukwuvictor012@gmail.com">okechukwuvictor012@gmail.com</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+
+                <!-- address part  -->
+                <li class="sm:mt-5% md:mt-5%">
+                    <ul class="flex gap-x-4">
+                        <li class=""><i class="fa-solid fa-location-dot text-maroon sm:text-2xl text-4xl"></i></li>
+                        <li>
+                            <ul class="my-auto">
+                                <li class="text-xl font-semibold text-white">Address</li>
+                                <li class="text-grey sm:text-sm">Minfa Estate Naze, Owerri Imo State.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+
             </div>
 
         </div>
@@ -516,6 +569,10 @@
     <!-- <div class="fixed bottom-36 md:bottom-44 right-2 z-50 bg-maroon bg-opacity-70 md:py-1 px-5 sm:py-1 rounded-md  shadow-md shadow-gray-500">
         <i class="fa-regular fa-comments md:text-xl text-white"></i>
     </div> -->
+
+    <!-- scroll to top button  -->
+    <button type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-maroon text-grey px-2 rounded"></i></button>
+
     <!-- whatsapp  -->
     <div class="fixed bottom-24 right-4 z-50">
         <button class="m-auto bg-white rounded-full md:w-16 md:h-16 sm:w-10 sm:h-10 shadow-md shadow-gray-500"><a class="text-maroon text-5xl sm:text-3xl " href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a></button>    
@@ -536,7 +593,7 @@
 
 <!-- footer section  -->
 <footer>
-    <div class="bg-blackhey md:py-6 md:px-8 sm:pt-8 sm:pb-4 sm:px-4 text-gray-400 flex">
+    <div class="bg-blackhey md:py-8 md:px-8 sm:pt-10 sm:pb-4 sm:px-4 text-gray-400 ">
         <div class="my-auto">
             <ul class="flex gap-x-5 text-2xl text-maroon">
             
@@ -555,26 +612,6 @@
             <p class="pt-3% sm:text-sm">Copyright © 2023. Allrights Reserved.</p>
         </div>
 
-        <div class="ml-auto">
-            <ul class="md:flex gap-x-4 sm:text-center  sm:flex-wrap gap-y-4 text-white">
-                <li class="sm:mb-2">
-                    <button
-                        class="md:bg-maroon md:px-8 sm:py-1 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 active About">About</button>
-                </li>
-                <li class="sm:mb-2">
-                    <button
-                        class="md:bg-maroon md:px-8 sm:py-1 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Project">Projects</button>
-                </li>
-                <li class="sm:mb-2">
-                    <button
-                        class="md:bg-maroon md:px-8 sm:py-1 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Resume">Resume</button>
-                </li>
-                <li>
-                    <button
-                        class="md:bg-maroon md:px-8 sm:py-1 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all Contact">Contact</button>
-                </li>
-            </ul>
-        </div>
         
     </div>
 </footer>
