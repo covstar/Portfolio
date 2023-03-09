@@ -21,7 +21,9 @@ $(document).ready(function(){
     $('.About').click(function(){
         $('.Project, .Resume, .Contact').removeClass('active');
         $('.About_section').fadeIn(300);
+        $('.about_for_heading').show();
         $('.project_section, .resume_section, .contact_section').fadeOut(300);
+        $('.project_for_heading, .resume_for_heading, .contact_for_heading').hide();
         $(this).addClass('active');
     });
 
@@ -29,6 +31,8 @@ $(document).ready(function(){
     $('.Project').click(function(){
         $('.project_section').fadeIn(300);
         $('.About_section, .resume_section, .contact_section').fadeOut(300);
+        $('.about_for_heading, .resume_for_heading, .contact_for_heading').hide();
+        $ ('.project_for_heading').show();
         $(this).addClass('active');
         $('.About, .Contact, .Resume').removeClass('active');
     });
@@ -39,6 +43,8 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('.resume_section').fadeIn(300)
         $('.About_section, .project_section, .contact_section').fadeOut(300);
+        $('.about_for_heading, .project_for_heading, .contact_for_heading').hide();
+        $ ('.resume_for_heading').show();
     });
 
     // function for contact page 
@@ -47,6 +53,8 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('.contact_section').fadeIn(300);
         $('.About_section, .project_section, .resume_section').fadeOut(300);
+        $('.about_for_heading, .resume_for_heading, .project_for_heading').hide();
+        $ ('.contact_for_heading').show();
     });
 
 });
