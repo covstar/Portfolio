@@ -25,6 +25,10 @@ module.exports = {
       'grey': '#f0eeed',
       'maroon': '#c92c6d',
       'blackhey': '#332c39',
+      'darker-teal': '#072227',
+      'dark-teal': '#35858b',
+      'light-teal': '#4fbdba',
+      'lighter-teal': '#aefeff',
     },
       dropShadow: {
         red: '0 1px 2px rgb(185, 28, 28)',
