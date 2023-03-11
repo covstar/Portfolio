@@ -771,6 +771,11 @@ video {
   border-style: dashed;
 }
 
+.border-darker-teal{
+  --tw-border-opacity: 1;
+  border-color: rgb(7 34 39 / var(--tw-border-opacity));
+}
+
 .border-grey{
   --tw-border-opacity: 1;
   border-color: rgb(240 238 237 / var(--tw-border-opacity));
@@ -781,9 +786,9 @@ video {
   border-color: rgb(201 44 109 / var(--tw-border-opacity));
 }
 
-.border-darker-teal{
+.border-b-darker-teal{
   --tw-border-opacity: 1;
-  border-color: rgb(7 34 39 / var(--tw-border-opacity));
+  border-bottom-color: rgb(7 34 39 / var(--tw-border-opacity));
 }
 
 .border-b-grey{
@@ -791,24 +796,14 @@ video {
   border-bottom-color: rgb(240 238 237 / var(--tw-border-opacity));
 }
 
-.border-b-maroon{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(201 44 109 / var(--tw-border-opacity));
-}
-
-.border-b-darker-teal{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(7 34 39 / var(--tw-border-opacity));
-}
-
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blackhey{
+.bg-dark-teal{
   --tw-bg-opacity: 1;
-  background-color: rgb(51 44 57 / var(--tw-bg-opacity));
+  background-color: rgb(53 133 139 / var(--tw-bg-opacity));
 }
 
 .bg-darker-teal{
@@ -836,14 +831,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-dark-teal{
+.bg-gray-800{
   --tw-bg-opacity: 1;
-  background-color: rgb(53 133 139 / var(--tw-bg-opacity));
-}
-
-.bg-light-teal{
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 189 186 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70{
@@ -854,24 +844,12 @@ video {
   --tw-bg-opacity: 0.9;
 }
 
-.bg-opacity-30{
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
-}
-
 .bg-opacity-0{
   --tw-bg-opacity: 0;
 }
 
 .bg-headImg{
   background-image: url('https://covstar.sirv.com/Portfolio_imgs/M_project.jpg');
-}
-
-.bg-none{
-  background-image: none;
 }
 
 .bg-cover{
@@ -1024,6 +1002,16 @@ video {
   color: rgb(51 44 57 / var(--tw-text-opacity));
 }
 
+.text-dark-teal{
+  --tw-text-opacity: 1;
+  color: rgb(53 133 139 / var(--tw-text-opacity));
+}
+
+.text-darker-teal{
+  --tw-text-opacity: 1;
+  color: rgb(7 34 39 / var(--tw-text-opacity));
+}
+
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1044,14 +1032,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-darker-teal{
+.text-yellow-400{
   --tw-text-opacity: 1;
-  color: rgb(7 34 39 / var(--tw-text-opacity));
-}
-
-.text-dark-teal{
-  --tw-text-opacity: 1;
-  color: rgb(53 133 139 / var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .opacity-20{
@@ -1113,6 +1096,11 @@ video {
   background-color: rgb(240 238 237 / var(--tw-bg-opacity));
 }
 
+.hover\:text-darker-teal:hover{
+  --tw-text-opacity: 1;
+  color: rgb(7 34 39 / var(--tw-text-opacity));
+}
+
 .hover\:text-grey:hover{
   --tw-text-opacity: 1;
   color: rgb(240 238 237 / var(--tw-text-opacity));
@@ -1121,11 +1109,6 @@ video {
 .hover\:text-maroon:hover{
   --tw-text-opacity: 1;
   color: rgb(201 44 109 / var(--tw-text-opacity));
-}
-
-.hover\:text-darker-teal:hover{
-  --tw-text-opacity: 1;
-  color: rgb(7 34 39 / var(--tw-text-opacity));
 }
 
 @media (max-width: 720px){
@@ -1543,10 +1526,6 @@ video {
   .xs\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .xs\:font-bold{
-    font-weight: 700;
   }
 }
 
