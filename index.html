@@ -33,8 +33,8 @@
         </div>
 
         <!-- toggle button  -->
-        <div class="my-auto text-xl">
-            <button><i class="fa-solid fa-cloud-sun text-yellow-400 toggle"></i></button>
+        <div class="my-auto text-xl md:text-3xl">
+            <button><i class="fa-solid fa-cloud-sun text-lighter-teal toggle"></i></button>
         </div>
         
     <!-- code  -->
@@ -65,7 +65,7 @@
     <!-- header section  -->
     <header class="md:pt-5% md:px-8 bg-opacity-90 relative sm:pt-17% sm:px-2">
         <!-- background overlay  -->
-        <div class="absolute w-full h-full bg-black header_overlay bg-opacity-70 -z-0  top-0 left-0 right-0 bottom-0"></div>
+        <div class="absolute w-full h-full bg-black header_overlay bg-opacity-80 -z-0  top-0 left-0 right-0 bottom-0"></div>
 
         <!-- Header writer up -->
         <div class="md:flex">
@@ -91,7 +91,7 @@
         
 
         <!-- nav link  -->
-        <nav class="nav_buttons relative z-10 text-grey md:pt-10% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-20% sm:pb-4 ">
+        <nav class="nav_buttons relative z-10 text-grey md:pt-5% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-20% sm:pb-4 ">
             <ul class="flex gap-x-4 sm:justify-center  sm:flex-wrap gap-y-4">
                 <li>
                     <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 active About">About</button>
@@ -110,13 +110,13 @@
     </header>
 
     <!-- About me section -->
-    <section class="md:my-3% md:px-8 sm:my-10% sm:px-4 md:grid grid-cols-2 gap-x-16 gap-y-6 About_section ">
+    <section class="md:my-3% md:px-8 sm:my-10% sm:px-4 md:grid grid-cols-2 gap-x-16 gap-y-6 About_section">
 
         <div class="mx-auto sm:mb-8 bg-opacity-0">
             <img class="rounded-full md:w-64 md:h-64 sm:w-40 sm:h-40 border-4 border-darker-teal mx-auto" src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" alt="">
         </div>
         <!-- bio summary -->
-        <div class=" md:ml-3% sm:mb-8 bg-white p-4">
+        <div class="sm:mb-8 bg-white p-4 md:h-fit">
             <ul>
                 <li class="list-inside list-disc md:text-3xl sm:text-2xl font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2">Bio</li>
             </ul>
@@ -128,11 +128,36 @@
             </p>
         </div>
 
+        <!-- Skills -->
+        <div class=" bg-white p-4 md:h-fit">
+            <ul>
+                <li
+                    class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2 ">
+                    Skills
+                </li>
+            </ul>
+            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
+                <ul class="list-disc mx-4 sm:mx-1 sm:text-sm sm:leading-6  sm:p-2 ">
+                    <li>HTML, CSS, and JavaScript programming languages</li>
+                    <li>Familiarity with frontend frameworks such as React, Vue, etc.</li>
+                    <li>Strong understanding of responsive design and cross-browser compatibility</li>
+                    <li>Experience with version control systems, such as Git.</li>
+                    <li>Understanding of web development concepts such as DOM manipulation and web architecture</li>
+                    <li>Knowledge of browser developer tools and debugging techniques</li>
+                    <li>Understanding of web performance optimization techniques</li>
+                    <li>Familiarity with accessibility guidelines and best practices</li>
+                    <li>Experience with JavaScript libraries such as jQuery.</li>
+                    <li>Strong problem-solving, debugging and troubleshooting skills.</li>
+                </ul>
+            </div>
+        </div>
+
         <!-- Experience  -->
-        <div class="md:ml-3% sm:mb-8 bg-white p-4">
+        <div class="sm:mb-8 bg-white p-4 md:h-fit">
             <ul>
                 <li class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2">Experiences</li>
             </ul>
+            
             <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 <div class="flex md:text-xl sm:text-sm  xs:text-xs font-bold tb:text-sm sm:p-2">
                     <p class="ml-3% ">Frontend Developer (freelancing)</p>
@@ -153,33 +178,16 @@
                         Provided website maintenance and enhancements.
                     </li>
                 </ul>
+                
             </div>
+
+            
         </div>
 
-        <!-- Skills -->
-        <div class="md:ml-3% bg-white p-4">
-            <ul>
-                <li class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2 ">Skills
-                </li>
-            </ul>
-            <div class="md:mt-4 md:text-justify shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
-               <ul class="list-disc mx-4 sm:mx-1 sm:text-sm sm:leading-6  sm:p-2 ">
-                <li>HTML, CSS, and JavaScript programming languages</li>
-                <li>Familiarity with frontend frameworks such as React, Vue, etc.</li>
-                <li>Strong understanding of responsive design and cross-browser compatibility</li>
-                <li>Experience with version control systems, such as Git.</li>
-                <li>Understanding of web development concepts such as DOM manipulation and web architecture</li>
-                <li>Knowledge of browser developer tools and debugging techniques</li>
-                <li>Understanding of web performance optimization techniques</li>
-                <li>Familiarity with accessibility guidelines and best practices</li>
-                <li>Experience with JavaScript libraries such as jQuery.</li>
-                <li>Strong problem-solving, debugging and troubleshooting skills.</li>
-               </ul>
-            </div>
-        </div>
+        
 
         <!-- Tools -->
-        <div class="md:ml-3% sm:mt-8 bg-white p-4">
+        <div class=" sm:mt-8 bg-white p-4 md:h-fit">
             <ul>
                 <li
                     class="list-disc list-inside md:text-3xl sm:text-2xl font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2 ">
@@ -198,13 +206,15 @@
             </div>
         </div>
 
+        
+
     </section>
 
     <!-- projects section  -->
     <section class="md:my-3% md:px-8 sm:my-10% sm:px-4 project_section hidden">
 
         <!-- project 1  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2" src="https://covstar.sirv.com/Portfolio_imgs/loopstudios-desktop-preview.jpg" alt="loopstudios">
@@ -216,14 +226,14 @@
             </div>
 
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">The goal of this project was to build out the landing page and get it looking as close to the UI design as possible. This
                 project focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.</p>
             </div>
         </div>
 
         <!-- project 2  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -240,14 +250,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">This a hospital landing page website. Was built with HTML, CSS and Javascript. Its has some cool animation effects that occurs when scrolling. This project was built to test my frontend skills using basic coding tools.
                 </p>
             </div>
         </div>
 
         <!-- project 3  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -266,14 +276,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">A reliquus app is a type of application that allows users to track the remaining days, weeks, and months left in a given year. The term "reliquus" is derived from the Latin word for "remaining" or "leftover," which is appropriate since this app is designed to help users keep track of how much time is left in the current year.
                 </p>
             </div>
         </div>
 
         <!-- project 4  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -292,14 +302,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">The homepage of the Sunnyside website is typically designed with a clean and modern layout, featuring high-quality images and graphics that showcase the brand's products and services.
                 </p>
             </div>
         </div>
 
         <!-- project 5  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -318,14 +328,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">The huddle community website is a platform designed to bring people together around a shared interest, cause, or goal. The website typically features a forum or message board where members can post and respond to messages, share information and resources, and collaborate on projects and initiatives.
                 </p>
             </div>
         </div>
 
         <!-- project 6  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -344,14 +354,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">A Fylo website is a digital platform designed to provide users with a simple and efficient way to store and share files online. The website typically features a clean and modern design, with a user-friendly interface that allows users to upload, organize, and manage files with ease.
                 </p>
             </div>
         </div>
 
         <!-- project 7  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -370,7 +380,7 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">
                     This countdown timer web app is a digital tool designed to count down the time remaining until a specific event or deadline.
                 </p>
@@ -378,7 +388,7 @@
         </div>
 
         <!-- project 8  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -397,14 +407,14 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">A Blogr website is a digital platform designed for bloggers to create and publish articles on various topics. The website typically features a clean and modern design, with a user-friendly interface that allows bloggers to create and edit their articles with ease.
                 </p>
             </div>
         </div>
 
         <!-- project 9  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2"
@@ -423,7 +433,7 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">
                     This is an e-commerce website with multiple pages. Built with HTML, CSS and JavaScript. The primary goal of this website is to reach maximum customers at the right time to increase sales and profitability of
                     the business.
@@ -432,7 +442,7 @@
         </div>
 
         <!-- project 10  -->
-        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism">
+        <div class="md:flex gap-x-12 mb-10% p-4 neumorphism bg-white text-blackhey">
             <!-- project img  -->
             <div class="md:w-1/2">
                 <img class="rounded-md border-maroon border-2" src="https://covstar.sirv.com/Portfolio_imgs/advice-desktop-preview.jpg"
@@ -451,7 +461,7 @@
             </div>
         
             <!-- project texts  -->
-            <div class="md:w-1/2 md:text-3xl tb:text-xl text-blackhey md:text-justify md:pt-5% sm:pt-3%">
+            <div class="md:w-1/2 md:text-3xl tb:text-xl  md:text-justify md:pt-5% sm:pt-3%">
                 <p class="leading-normal border-b-2 border-maroon md:pb-4 sm:pb-2 sm:text-sm">
                     This random advice generator website is a digital tool designed to provide users with a random piece of advice or guidance on various topics. The website typically features a simple interface that allows users to generate advice by clicking a button or entering a keyword.
                 </p>
@@ -475,9 +485,9 @@
     <section class="md:my-3% md:px-8 sm:my-10%  contact_section hidden">
 
         <!-- contact me header  -->
-        <div class="relative mx-auto text-center">
+        <div class="relative mx-auto text-center contact_header text-darker-teal">
             <p class="md:text-6xl sm:text-6xl font-bold opacity-20">CONTACT</p>
-            <p class="relative -top-12 text-4xl font-bold text-darker-teal">CONTACT <span class="text-maroon">ME</span></p>
+            <p class="relative -top-12 text-4xl font-bold">CONTACT <span class="text-maroon">ME</span></p>
         </div>
 
         <!-- contact form and address  -->
@@ -587,8 +597,8 @@
     <button type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-dark-teal text-grey px-2 rounded"></i></button>
 
     <!-- whatsapp  -->
-    <div class="fixed bottom-24 right-4 z-50">
-        <button class="m-auto bg-white rounded-full md:w-16 md:h-16 sm:w-10 sm:h-10 shadow-md shadow-gray-500"><a class="text-darker-teal text-5xl sm:text-3xl " href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a></button>    
+    <div class="fixed bottom-24 right-4 sm:right-3 z-50">
+        <button class="m-auto bg-white rounded-full md:w-16 md:h-16 sm:w-12 sm:h-12 "><a class="text-darker-teal text-5xl sm:text-3xl " href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a></button>    
     </div>
     
 

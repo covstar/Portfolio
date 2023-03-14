@@ -688,6 +688,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -841,6 +845,10 @@ video {
 
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-opacity-90{
@@ -1036,6 +1044,16 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-lighter-teal{
+  --tw-text-opacity: 1;
+  color: rgb(174 254 255 / var(--tw-text-opacity));
+}
+
+.text-light-teal{
+  --tw-text-opacity: 1;
+  color: rgb(79 189 186 / var(--tw-text-opacity));
+}
+
 .opacity-20{
   opacity: 0.2;
 }
@@ -1115,6 +1133,10 @@ video {
     right: 1rem;
   }
 
+  .sm\:right-3{
+    right: 0.75rem;
+  }
+
   .sm\:mx-1{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1179,6 +1201,14 @@ video {
     height: 10rem;
   }
 
+  .sm\:h-14{
+    height: 3.5rem;
+  }
+
+  .sm\:h-12{
+    height: 3rem;
+  }
+
   .sm\:w-10{
     width: 2.5rem;
   }
@@ -1189,6 +1219,14 @@ video {
 
   .sm\:w-full{
     width: 100%;
+  }
+
+  .sm\:w-14{
+    width: 3.5rem;
+  }
+
+  .sm\:w-12{
+    width: 3rem;
   }
 
   .sm\:flex-wrap{
@@ -1353,6 +1391,11 @@ video {
     margin-bottom: auto;
   }
 
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:ml-3{
     margin-left: 0.75rem;
   }
@@ -1397,6 +1440,23 @@ video {
     height: 16rem;
   }
 
+  .md\:h-1{
+    height: 0.25rem;
+  }
+
+  .md\:h-1\/2{
+    height: 50%;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -1407,6 +1467,10 @@ video {
 
   .md\:w-64{
     width: 16rem;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:gap-x-10{
@@ -1551,9 +1615,9 @@ video {
 }
 
 @media (min-width: 721px) and (max-width: 1290px){
-  .tb\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .tb\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .tb\:text-sm{
@@ -1564,15 +1628,5 @@ video {
   .tb\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .tb\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .tb\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
