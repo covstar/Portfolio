@@ -3,6 +3,8 @@ $(document).ready(function() {
     // text colors and background colours toggle function 
     $('.toggle').click(function() {
         $(this).toggleClass('fa-cloud-sun fa-moon');
+        // for about section 
+        let shadow = '.About_section > div > div, .About_section > div > p';
 
         // for resume section 
         let resumeBg = '.resume_section > div > a';
@@ -35,6 +37,8 @@ $(document).ready(function() {
             // add darker teal color 
             let addDarkerTeal = '.About_section > div > ul > li, .contact_header';
 
+            $(shadow).addClass('shadow-red-200');
+            $(shadow).removeClass('shadow-slate-700');
             $('.About_section > div > img').removeClass('border-lighter-teal');
             $('.About_section > div > img').addClass('border-darker-teal');
             $('.About_section > div').addClass('bg-white text-blackhey');
@@ -81,7 +85,9 @@ $(document).ready(function() {
             let removeBlackhey = '.About_section > div > p, .About_section > div > div, .About_section > div > div > ul';
             // add darker teal color 
             let removeDarkerTeal = '.About_section > div > ul > li, .contact_header';
-
+            
+            $(shadow).removeClass('shadow-red-200');
+            $(shadow).addClass('shadow-slate-700');
             $('.About_section > div > img').removeClass('border-darker-teal');
             $('.About_section > div > img').addClass('border-lighter-teal');
             $('.About_section > div').addClass('bg-darker-teal text-white');

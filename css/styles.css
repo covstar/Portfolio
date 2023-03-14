@@ -14,14 +14,14 @@ header{
     color: #c92c6d;
 }
 .active:hover{
-    background-color: #c92c6d;
+    background-color: #036572;
     color: white;
     transition: all .3s;
 }
 
 .neumorphism{
     border-radius: 10px;
-        box-shadow: 0px 10px 10px #663e4f,
+        box-shadow: 0px 10px 10px #004852,
             -0px -5px 10px #013d3bea;
 }
 
@@ -46,4 +46,5 @@ header{
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    filter: hue-rotate(170deg);
 }
