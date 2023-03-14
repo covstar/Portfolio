@@ -25,3 +25,26 @@ header{
         box-shadow: 0px 20px 30px #c92c6d49,
             -10px -10px 30px #9e9e9e;
 }
+
+/* Define the animation */
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the image */
+.boy_laptop {
+    animation-name: moveUpAndDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
