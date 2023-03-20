@@ -517,6 +517,100 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.header_text{
+  position: relative;
+  z-index: 20;
+  text-align: left;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(240 238 237 / var(--tw-text-opacity));
+}
+
+.hi_covstar{
+  line-height: 1.5;
+}
+
+.experienced_dev{
+  line-height: 2;
+}
+
+.about_list{
+  list-style-position: inside;
+  list-style-type: disc;
+  border-bottom-width: 2px;
+  border-style: dashed;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(7 34 39 / var(--tw-border-opacity));
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(7 34 39 / var(--tw-text-opacity));
+}
+
+/* small screen  */
+
+@media (max-width: 720px) {
+  .header_text{
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .about_list{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/* desktop screens  */
+
+@media (min-width: 722px) {
+  .hi_covstar{
+    padding-bottom: 0.5rem;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .experienced_dev{
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    line-height: 1.375;
+  }
+
+  .header_text{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .about_list{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+/* tablet screens  */
+
+@media (min-width: 721px) and (max-width: 1111px) {
+  .hi_covstar{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .experienced_dev{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .header_text{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -676,10 +770,6 @@ video {
   width: 100%;
 }
 
-.list-inside{
-  list-style-position: inside;
-}
-
 .list-disc{
   list-style-type: disc;
 }
@@ -694,6 +784,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-x-12{
@@ -771,10 +865,6 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-dashed{
-  border-style: dashed;
-}
-
 .border-darker-teal{
   --tw-border-opacity: 1;
   border-color: rgb(7 34 39 / var(--tw-border-opacity));
@@ -788,11 +878,6 @@ video {
 .border-maroon{
   --tw-border-opacity: 1;
   border-color: rgb(201 44 109 / var(--tw-border-opacity));
-}
-
-.border-b-darker-teal{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(7 34 39 / var(--tw-border-opacity));
 }
 
 .border-b-grey{
@@ -923,10 +1008,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -937,10 +1018,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -1208,10 +1285,6 @@ video {
     width: 10rem;
   }
 
-  .sm\:w-full{
-    width: 100%;
-  }
-
   .sm\:flex-wrap{
     flex-wrap: wrap;
   }
@@ -1265,16 +1338,12 @@ video {
     padding-top: 2.5rem;
   }
 
+  .sm\:pt-10\%{
+    padding-top: 10%;
+  }
+
   .sm\:pt-17\%{
     padding-top: 17%;
-  }
-
-  .sm\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .sm\:pt-20\%{
-    padding-top: 20%;
   }
 
   .sm\:pt-3{
@@ -1283,10 +1352,6 @@ video {
 
   .sm\:pt-3\%{
     padding-top: 3%;
-  }
-
-  .sm\:pt-10\%{
-    padding-top: 10%;
   }
 
   .sm\:text-center{
@@ -1321,11 +1386,6 @@ video {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-xs{
@@ -1376,6 +1436,10 @@ video {
   .md\:my-auto{
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
   }
 
   .md\:mt-3{
@@ -1480,10 +1544,6 @@ video {
     padding-bottom: 2rem;
   }
 
-  .md\:pb-2{
-    padding-bottom: 0.5rem;
-  }
-
   .md\:pb-4{
     padding-bottom: 1rem;
   }
@@ -1506,10 +1566,6 @@ video {
 
   .md\:pt-5\%{
     padding-top: 5%;
-  }
-
-  .md\:text-justify{
-    text-align: justify;
   }
 
   .md\:text-2xl{
@@ -1537,46 +1593,63 @@ video {
     line-height: 1;
   }
 
-  .md\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .md\:leading-snug{
-    line-height: 1.375;
-  }
 }
 
 @media (max-width: 440px){
-  .xs\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .xs\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width: 721px) and (max-width: 1290px){
-  .tb\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+@media (min-width: 721px) and (max-width: 1111px){
+  .tb\:h-52{
+    height: 13rem;
+  }
+
+  .tb\:w-52{
+    width: 13rem;
+  }
+
+  .tb\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .tb\:grid-rows-1{
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .tb\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .tb\:px-10\%{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .tb\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .tb\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .tb\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .tb\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .tb\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }

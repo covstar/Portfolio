@@ -4,4 +4,64 @@
 
 @tailwind base;
 @tailwind components;
+
+.header_text {
+    @apply text-left  font-bold text-grey z-20 relative;
+}
+
+.hi_covstar {
+    @apply leading-normal;
+}
+
+.experienced_dev {
+    @apply leading-loose;
+}
+
+.about_list {
+    @apply list-inside list-disc  font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2
+}
+
+/* small screen  */
+@screen sm {
+    .header_text {
+            @apply  text-center  w-full text-xl;
+        }
+        .about_list {
+            @apply text-2xl
+        }
+}
+
+
+
+/* desktop screens  */
+@screen md {
+    .hi_covstar {
+        @apply text-7xl pb-2;
+    }
+    .experienced_dev {
+        @apply text-7xl pb-8 leading-snug;
+    }
+    .header_text {
+        @apply text-5xl my-auto;
+    }
+    .about_list {
+        @apply text-3xl
+    }
+}
+
+/* tablet screens  */
+@screen tb {
+    .hi_covstar {
+        @apply text-4xl;
+    }
+
+    .experienced_dev {
+        @apply text-4xl leading-normal;
+    }
+
+    .header_text {
+        @apply text-3xl;
+    }
+}
+
 @tailwind utilities;
