@@ -70,7 +70,7 @@ module.exports = {
 
       // media quries
       screens: {
-        xs: {max: '440px'},
+        xs: {max: '393px'},
         sm: {max: '720px'},
         // => @media (max-width: 639px) { ... }
         tb: {min: '721px', max: '1111px'},

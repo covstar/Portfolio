@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
-<body class="relative font-Open_sans bg-headImg bg-fixed bg-no-repeat bg-cover">
+<body class="relative font-Open_sans bg-headImg bg-fixed bg-no-repeat bg-cover pb-24">
     <div class="body_overlay absolute  w-full h-full bg-lighter-teal -z-10 bg-opacity-70"></div> <!-- body overlay -->
 
 
@@ -27,7 +27,7 @@
         <div class="mr-auto profile flex gap-x-2 md:gap-x-4">
             <a href=""><img class="md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full border-grey border-1"
                     src="https://covstar.sirv.com/Portfolio_imgs/PSX_20230304_152217.jpg" width="433" height="577" alt="" /></a>
-            <ul class="font-bold sm:text-sm my-auto">
+            <ul class="font-bold sm:text-sm my-auto xs:text-xs">
                 <li class="">Covstar</li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
         <!-- Portfolio -->
         <div class="ml-auto my-auto font-bold  flex gap-x-2 md:gap-x-4">
 
-            <div class="md:flex md:gap-x-10 sm:text-center my-auto sm:text-sm">
+            <div class="md:flex md:gap-x-10 sm:text-center my-auto sm:text-sm xs:text-xs">
             
                 <!-- current time  -->
                 <div>
@@ -72,7 +72,7 @@
 
         
      
-            <div class="header_text">
+            <div class="header_text xs:text-xs">
             
                 <p class="hi_covstar">Hi! I'm Covstar, </p>
                 <p class="experienced_dev">An Experienced Frontend Web Developer.</p>
@@ -84,30 +84,46 @@
             </div>
 
             <!-- header image  -->
-            <div class="z-20 w-1/2 sm:mx-auto sm:mt-8">
+            <div class="z-20 w-1/2 sm:mx-auto sm:mt-8 xs:hidden">
                 <img class="boy_laptop" src="https://covstar.sirv.com/Portfolio_imgs/boy_laptop.png" alt="boy_laptop">
             </div>
 
         </div>
         
 
-        <!-- nav link  -->
-        <nav class="nav_buttons relative z-10 text-grey md:pt-5% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-10% sm:pb-4 ">
-            <ul class="flex gap-x-4 sm:justify-center  sm:flex-wrap gap-y-4">
-                <li>
-                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 active About">About</button>
-                </li>
-                <li>
-                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Project">Projects</button>
-                </li>
-                <li>
-                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Resume">Resume</button>
-                </li>
-                <li>
-                    <button class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all Contact">Contact</button>
-                </li>
-            </ul>
-        </nav>
+        <!-- nav link and image display for smaller screens  -->
+        <div class="xs:flex  xs:w-full">
+            <!-- nav links  -->
+            <nav
+                class="nav_buttons relative z-10 text-grey md:pt-5% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-10% sm:pb-4 xs:text-xs xs:my-auto xs:w-1/2">
+                <ul class="flex gap-x-4 sm:justify-center xs:justify-end xs:text-center xs:block sm:flex-wrap gap-y-4 ">
+                    <li class="xs:mb-2">
+                        <button
+                            class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 active About">About</button>
+                    </li>
+                    <li class="xs:mb-2">
+                        <button
+                            class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Project">Projects</button>
+                    </li>
+                    <li class="xs:mb-2">
+                        <button
+                            class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon transition-all delay-200 Resume">Resume</button>
+                    </li>
+                    <li class="xs:mb-2">
+                        <button
+                            class="bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all Contact">Contact</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- header image  -->
+            <div class="z-20 w-1/2 xs:block sm:mx-auto sm:mt-8 sm:hidden md:hidden tb:hidden">
+                <img class="boy_laptop" src="https://covstar.sirv.com/Portfolio_imgs/boy_laptop.png" alt="boy_laptop">
+            </div>
+
+            
+
+        </div>
+        
     </header>
 
     <!-- About me section -->
@@ -121,7 +137,7 @@
             <ul>
                 <li class="about_list">Bio</li>
             </ul>
-            <p class=" sm:text-sm sm:leading-6 shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
+            <p class=" sm:text-sm xs:text-xs sm:leading-6 shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
                 A passionate frontend developer. I specialize in crafting visually stunning and engaging websites and web applications
                 that deliver an unparalleled user experience. My expertise in HTML, CSS, and JavaScript, combined with my proficiency in
                 libraries like jQuery and Bootstrap, allows me to create dynamic and interactive designs that are both responsive and
@@ -138,7 +154,7 @@
                 </li>
             </ul>
             <div class="md:mt-4 shadow-md shadow-red-200 rounded-sm p-4 text-blackhey">
-                <ul class="list-disc mx-4 sm:mx-1 sm:text-sm sm:leading-6  sm:p-2 ">
+                <ul class="list-disc mx-4 sm:mx-1 sm:text-sm xs:text-xs  sm:leading-6  sm:p-2 ">
                     <li>HTML, CSS, and JavaScript programming languages</li>
                     <li>Familiarity with frontend frameworks such as React, Vue, etc.</li>
                     <li>Strong understanding of responsive design and cross-browser compatibility</li>
@@ -165,7 +181,7 @@
                     <p class="my-auto ml-auto">2020 - Present</p>
                 </div>
                
-                <ul class="mt-3% list-disc mx-4 sm:mx-1 sm:text-sm sm:leading-6  sm:p-2">
+                <ul class="mt-3% list-disc mx-4 sm:mx-1 sm:text-sm xs:text-xs  sm:leading-6  sm:p-2">
                     <li>
                         Designed and implemented the user-facing side of websites.
                     </li>
@@ -209,7 +225,7 @@
                 </li>
             </ul>
             <div class="md:mt-4 shadow-md shadow-red-200 rounded-sm p-5%">
-                <ul class="flex flex-wrap text-7xl sm:text-4xl gap-x-4 gap-y-6 justify-center text-darker-teal mx-4  sm:leading-6  sm:p-4">
+                <ul class="flex flex-wrap text-7xl sm:text-4xl xs:text-xl  gap-x-4 gap-y-6 justify-center text-darker-teal mx-4  sm:leading-6  sm:p-4">
                     <li><i class="fa-brands fa-html5"></i></li>
                     <li><i class="fa-brands fa-css3-alt"></i></li>
                     <li><i class="fa-brands fa-square-js"></i></li>
@@ -630,8 +646,8 @@
 </body>
 
 <!-- footer section  -->
-<footer>
-    <div class="bg-darker-teal md:py-8 md:px-8 sm:pt-10 sm:pb-4 sm:px-4 text-gray-400 ">
+<footer class="absolute w-full">
+    <div class="bg-darker-teal md:py-8 md:px-8 sm:pt-10 sm:pb-4 sm:px-4 text-gray-400">
         <div class="my-auto">
             <ul class="flex gap-x-5 text-2xl text-dark-teal">
             
