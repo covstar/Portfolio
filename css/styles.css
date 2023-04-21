@@ -20,9 +20,8 @@ header{
 }
 
 .neumorphism{
-    border-radius: 10px;
-        box-shadow: 0px 10px 10px #004852,
-            -0px -5px 10px #013d3bea;
+        box-shadow: 0px 10px 10px #0049525e,
+            -0px -5px 10px #013d3b68;
 }
 
 /* Define the animation */

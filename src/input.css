@@ -21,6 +21,27 @@
     @apply list-inside list-disc  font-semibold text-darker-teal border-b-2 border-b-darker-teal border-dashed pb-2
 }
 
+/* project sections */
+.project_container{
+    @apply md:flex gap-x-12  mb-10% p-4 sm:p-2 bg-white text-blackhey w-full
+}
+.project_container img{
+    @apply rounded-md border-maroon border-2
+}
+.project_container ul{
+    @apply flex-wrap flex gap-x-6 pt-4 font-semibold justify-center gap-y-2 
+}
+.project_container li{
+    @apply bg-darker-teal hover:bg-grey hover:text-darker-teal transition-all delay-200 text-grey md:px-6 sm:px-4 sm:py-1 md:py-2 rounded-sm sm:text-xs
+}
+
+.project_container p{
+    @apply leading-normal border-b-2  md:p-4 sm:p-2 sm:text-sm font-bold text-center
+}
+.flex_project_container {
+    @apply flex gap-x-4
+}
+
 /* small screen  */
 @screen sm {
     .header_text {
