@@ -28,6 +28,9 @@
 .project_container img{
     @apply rounded-md border-maroon border-2
 }
+.project_text{
+    @apply  md:text-3xl tb:text-lg my-auto sm:pt-3%
+}
 .project_container ul{
     @apply flex-wrap flex gap-x-6 pt-4 font-semibold justify-center gap-y-2 
 }

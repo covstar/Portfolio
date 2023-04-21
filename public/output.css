@@ -580,6 +580,31 @@ video {
   border-color: rgb(201 44 109 / var(--tw-border-opacity));
 }
 
+.project_text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 720px){
+  .project_text{
+    padding-top: 3%;
+  }
+}
+
+@media (min-width: 722px){
+  .project_text{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1111px){
+  .project_text{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .project_container ul{
   display: flex;
   flex-wrap: wrap;
