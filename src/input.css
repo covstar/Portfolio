@@ -5,8 +5,44 @@
 @tailwind base;
 @tailwind components;
 
+body{
+    @apply relative font-Open_sans bg-headImg bg-fixed bg-no-repeat bg-cover pb-24
+}
+.body_overlay {
+    @apply  absolute  w-full h-full bg-lighter-teal -z-10 bg-opacity-70
+}
+.header_navbar{
+    @apply  flex md:px-8 md:py-4 sm:p-4 bg-darker-teal text-grey md:text-xl sticky top-0 border-b border-b-grey z-50 
+}
+.navbar_profile{
+  @apply  mr-auto flex gap-x-2 md:gap-x-4
+}
+.profile_img {
+    @apply md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full border-grey border-solid border 
+}
+.nav_link{
+    @apply  relative z-10 text-grey md:pt-5% md:pb-8 font-semibold text-xl sm:text-sm sm:pt-10% sm:pb-4 xs:text-xs xs:my-auto xs:w-1/2
+}
+.nav_link ul{
+    @apply  flex gap-x-4 sm:justify-center xs:justify-end xs:text-center xs:block sm:flex-wrap gap-y-4 
+}
+.nav_buttons{
+    @apply  bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all  
+}
+header{
+    @apply md:pt-5% md:px-8 bg-opacity-90 relative sm:pt-17% sm:px-2
+}
+.header_overlay{
+    @apply absolute w-full h-full bg-black bg-opacity-80 -z-0  top-0 left-0 right-0 bottom-0
+}
 .header_text {
     @apply text-left  font-bold text-grey z-20 relative;
+}
+.header_img_container_1{
+    @apply z-20 w-1/2 sm:mx-auto sm:mt-8 xs:hidden
+}
+.header_img_container_2{
+    @apply z-20 w-1/2 xs:block sm:mx-auto sm:mt-8 sm:hidden md:hidden tb:hidden
 }
 
 .hi_covstar {
@@ -15,6 +51,22 @@
 
 .experienced_dev {
     @apply leading-loose;
+}
+/* About section  */
+.About_section{
+    @apply md:my-3% md:px-8 sm:my-10% sm:px-4 md:grid grid-cols-2 tb:grid-cols-1 tb:grid-rows-1 tb:px-10% gap-x-16 gap-y-6 
+}
+.About_section img {
+    @apply rounded-full md:w-64 md:h-64 tb:w-52 tb:h-52 sm:w-40 sm:h-40 border-4 border-darker-teal mx-auto
+}
+.about_me{
+    @apply  sm:text-sm xs:text-xs sm:leading-6 shadow-md shadow-red-200 rounded-sm p-4 text-blackhey
+}
+.about_box{
+    @apply mx-4 sm:mx-1 sm:text-sm xs:text-xs  sm:leading-6  sm:p-2 list-disc
+}
+.tech_stack{
+    @apply flex flex-wrap text-7xl sm:text-4xl xs:text-xl  gap-x-4 gap-y-6 justify-center text-darker-teal mx-4  sm:leading-6  sm:p-4
 }
 
 .about_list {
@@ -43,6 +95,14 @@
 }
 .flex_project_container {
     @apply flex gap-x-4
+}
+
+/* Resume section  */
+.resume_section{
+    @apply md:my-10% md:px-8 sm:my-45% sm:px-8 hidden
+}
+.resume_section a{
+    @apply bg-darker-teal text-grey hover:text-maroon hover:border-2 border-maroon hover:bg-grey transition-all delay-200 px-10 py-5 text-2xl sm:text-lg rounded-md shadow-md shadow-blackhey
 }
 
 /* small screen  */
