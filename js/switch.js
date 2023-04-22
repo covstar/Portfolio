@@ -68,7 +68,7 @@ $(document).ready(function() {
         $('.contact_header').removeClass('text-lighter-teal');
 
 
-      } else if (currentTime >= 18 && currentTime < 6) {
+      } else {
         // Execute code between 6:00 PM and 6:00 AM
        $('.toggle').removeClass('fa-cloud-sun text-lighter-teal');
         $('.toggle').addClass('fa-moon text-gray-700');
@@ -120,6 +120,6 @@ $(document).ready(function() {
          $(resumeBg).removeClass('bg-darker-teal');
          $(resumeBg).addClass('bg-maroon shadow-red-200');
       } 
-    }, 30000); // execute the code every 5 seconds
+    }, 5000); // execute the code every 5 seconds
   });
   
