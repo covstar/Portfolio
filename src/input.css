@@ -6,7 +6,7 @@
 @tailwind components;
 
 body{
-    @apply relative font-Open_sans bg-headImg bg-fixed bg-no-repeat bg-cover pb-24
+    @apply relative font-Open_sans bg-headImg bg-no-repeat bg-cover pb-24
 }
 .body_overlay {
     @apply  absolute  w-full h-full bg-lighter-teal -z-10 bg-opacity-70
@@ -30,10 +30,10 @@ body{
     @apply  bg-maroon md:px-8 py-2 sm:px-4 hover:bg-grey hover:text-maroon delay-200 transition-all  
 }
 header{
-    @apply md:pt-5% md:px-8 bg-opacity-90 relative sm:pt-17% sm:px-2
+    @apply md:pt-5% md:px-8 bg-opacity-90 relative sm:pt-17% sm:px-2 border-b border-b-grey
 }
 .header_overlay{
-    @apply absolute w-full h-full bg-black bg-opacity-80 -z-0  top-0 left-0 right-0 bottom-0
+    @apply absolute w-full h-full bg-dark-green bg-opacity-80 -z-0  top-0 left-0 right-0 bottom-0
 }
 .header_text {
     @apply text-left  font-bold text-grey z-20 relative;
@@ -56,7 +56,7 @@ header{
 .About_section{
     @apply md:my-3% md:px-8 sm:my-10% sm:px-4 md:grid grid-cols-2 tb:grid-cols-1 tb:grid-rows-1 tb:px-10% gap-x-16 gap-y-6 
 }
-.About_section img {
+.my_image {
     @apply rounded-full md:w-64 md:h-64 tb:w-52 tb:h-52 sm:w-40 sm:h-40 border-4 border-darker-teal mx-auto
 }
 .about_me{
@@ -91,7 +91,7 @@ header{
 }
 
 .project_container p{
-    @apply leading-normal border-b-2  md:p-4 sm:p-2 sm:text-sm font-bold text-center
+    @apply leading-normal border-b-2  md:p-4 sm:p-2 sm:text-sm xs:text-xs font-bold text-center
 }
 .flex_project_container {
     @apply flex gap-x-4
@@ -101,7 +101,7 @@ header{
 .resume_section{
     @apply md:my-10% md:px-8 sm:my-45% sm:px-8 hidden
 }
-.resume_section a{
+.resume_button{
     @apply bg-darker-teal text-grey hover:text-maroon hover:border-2 border-maroon hover:bg-grey transition-all delay-200 px-10 py-5 text-2xl sm:text-lg rounded-md shadow-md shadow-blackhey
 }
 

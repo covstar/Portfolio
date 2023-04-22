@@ -34,7 +34,7 @@
 
         <!-- toggle button  -->
         <div class="my-auto text-xl md:text-3xl">
-            <button><i class="fa-solid fa-cloud-sun text-lighter-teal toggle"></i></button>
+            <button aria-label="toggle"><i class="fa-solid fa-cloud-sun text-lighter-teal toggle"></i></button>
         </div>
         
     <!-- code  -->
@@ -63,7 +63,7 @@
     </nav>
 
     <!-- header section  -->
-    <header>
+    <header class="">
         <!-- background overlay  -->
         <div class="header_overlay"></div>
 
@@ -95,19 +95,19 @@
             <nav class="nav_link">
                 <ul>
                     <li class="xs:mb-2">
-                        <button
+                        <button aria-label="About"
                             class="nav_buttons active About">About</button>
                     </li>
                     <li class="xs:mb-2">
-                        <button
+                        <button aria-label="Project"
                             class="nav_buttons Project">Projects</button>
                     </li>
                     <li class="xs:mb-2">
-                        <button
+                        <button aria-label="resume"
                             class="nav_buttons Resume">Resume</button>
                     </li>
                     <li class="xs:mb-2">
-                        <button
+                        <button aria-label="contact"
                             class="nav_buttons Contact">Contact</button>
                     </li>
                 </ul>
@@ -124,8 +124,8 @@
     <!-- About me section -->
     <section class="About_section">
 
-        <div class="mx-auto my-auto sm:mb-8 bg-opacity-0">
-            <img src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" alt="">
+        <div class="mx-auto my-auto sm:mb-8 bg-opacity-0 ">
+            <img class="my_image" src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" alt="">
         </div>
         <!-- bio summary -->
         <div class="sm:mb-8 bg-white p-4 md:h-fit">
@@ -216,7 +216,7 @@
             <ul>
                 <li
                     class="about_list">
-                    Tech Stack
+                   Stack
                 </li>
             </ul>
             <div class="md:mt-4 shadow-md shadow-red-200 rounded-sm p-5%">
@@ -511,7 +511,7 @@
 
     <section class="resume_section">
         <div class="sm:text-center">
-            <a href="./src/Okechukwu_victor's_resume.pdf" download="Okechukwu_victor's_resume">Download resume <i class="fa-regular fa-file-pdf"></i></a>
+            <a class="resume_button" href="./src/Okechukwu_victor's_resume.pdf" download="Okechukwu_victor's_resume">Download resume <i class="fa-regular fa-file-pdf"></i></a>
         </div>
     </section>
 
@@ -631,11 +631,11 @@
     </div> -->
 
     <!-- scroll to top button  -->
-    <button type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-dark-teal text-grey px-2 rounded"></i></button>
+    <button aria-label="scrollTop" type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-dark-teal text-grey px-2 rounded"></i></button>
 
     <!-- whatsapp  -->
     <div class="fixed bottom-24 right-4 sm:right-3 z-50">
-        <button class="m-auto bg-white rounded-full md:w-16 md:h-16 sm:w-12 sm:h-12 "><a class="text-darker-teal text-5xl sm:text-3xl " href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a></button>    
+        <button aria-label="whatsapp" class="m-auto bg-white rounded-full md:w-16 md:h-16 sm:w-12 sm:h-12 "><a class="text-darker-teal text-5xl sm:text-3xl " href="https://wa.me/2348109119717?text=Hey!%20Covstar,"><i class="fa-brands fa-whatsapp "></i></a></button>    
     </div>
     
 
@@ -649,12 +649,13 @@
     <script src="./js/time.js"></script>
     <script src="./js/location.js"></script>
     <script src="./js/mood.js"></script>
+    <script src="./js/switch.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
 <!-- footer section  -->
 <footer class="absolute w-full">
-    <div class="bg-darker-teal md:py-8 md:px-8 sm:pt-10 sm:pb-4 sm:px-4 text-gray-400">
+    <div class="bg-black md:py-8 md:px-8 sm:pt-10 sm:pb-4 sm:px-4 text-gray-400 footer border-t border-t-grey">
         <div class="my-auto">
             <ul class="flex gap-x-5 text-2xl text-dark-teal">
             

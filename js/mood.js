@@ -7,20 +7,21 @@ $(document).ready(function() {
         let shadow = '.About_section > div > div, .About_section > div > p';
 
         // for resume section 
-        let resumeBg = '.resume_section > div > a';
+        let resumeBg = '.resume_button';
         // for project 
-        let projectBg = '.project_section > div';
+        let projectBg = '.project_container';
         let projectLink = '.project_section > div > div> ul > li';
+        
 
 
         if ($(this).hasClass('fa-cloud-sun')) {
             $(this).addClass('text-lighter-teal');
             // body overlay 
-            $('.body_overlay').removeClass('bg-darker-teal');
+            $('.body_overlay').removeClass('bg-army-green');
             $('.body_overlay').addClass('bg-lighter-teal');
             // header_overlay 
             $('header').removeClass('border-b border-b-grey');
-            $('.header_overlay').addClass('bg-black bg-opacity-80');
+            $('.header_overlay').addClass('bg-dark-green bg-opacity-80');
             $('.header_overlay').removeClass('bg-darker-teal bg-opacity-90');
 
             // nav buttons 
@@ -28,6 +29,10 @@ $(document).ready(function() {
             $('.nav_buttons > ul > li > button').removeClass('bg-darker-teal');
             $('.nav_buttons').removeClass('text-black');
             $('.nav_buttons').addClass('text-grey');
+
+            // footer
+            $('.footer').removeClass('border-t border-t-grey');
+
 
             // About section 
             // remove grey text color 
@@ -39,8 +44,8 @@ $(document).ready(function() {
 
             $(shadow).addClass('shadow-red-200');
             $(shadow).removeClass('shadow-slate-700');
-            $('.About_section > div > img').removeClass('border-lighter-teal');
-            $('.About_section > div > img').addClass('border-darker-teal');
+            $('my_image').removeClass('border-grey');
+            $('my_image').addClass('border-darker-teal');
             $('.About_section > div').addClass('bg-white text-blackhey');
             $('.About_section > div').removeClass('bg-darker-teal');
             $(removeGreyText).removeClass('text-grey');
@@ -48,14 +53,14 @@ $(document).ready(function() {
             $(addBlackhey).addClass('text-blackhey');
 
             //  project section 
-            $(projectBg).addClass('bg-white text-blackhey');
-            $(projectBg).removeClass('bg-darker-teal text-grey');
+            $(projectBg).addClass('bg-white text-black');
+            $(projectBg).removeClass('bg-choco text-grey');
             $(projectLink).addClass('bg-darker-teal');
             $(projectLink).removeClass('bg-maroon');
 
              // resume section 
             $(resumeBg).addClass('bg-darker-teal');
-            $(resumeBg).removeClass('bg-maroon');
+            $(resumeBg).removeClass('bg-maroon shadow-red-200');
 
 
             // contact section 
@@ -67,16 +72,19 @@ $(document).ready(function() {
             $(this).addClass('text-gray-700');
             // body overlay 
             $('.body_overlay').removeClass('bg-lighter-teal');
-            $('.body_overlay').addClass('bg-darker-teal');
+            $('.body_overlay').addClass('bg-army-green');
             // header_overlay
             $('header').addClass('border-b border-b-grey');
             $('.header_overlay').addClass('bg-darker-teal bg-opacity-90');
-            $('.header_overlay').removeClass('bg-black'); 
+            $('.header_overlay').removeClass('bg-dark-green bg-opacity-80'); 
             // nav buttons 
             $('.nav_buttons > ul > li > button').addClass('bg-dark-teal');
             $('.nav_buttons > ul > li > button').removeClass('bg-maroon');
             $('.nav_buttons').removeClass('text-grey');
             $('.nav_buttons').addClass('text-black');
+            // footer
+            $('.footer').addClass('border-t border-t-grey');
+            
 
             // About section 
             // remove grey text color 
@@ -87,9 +95,9 @@ $(document).ready(function() {
             let removeDarkerTeal = '.About_section > div > ul > li, .contact_header';
             
             $(shadow).removeClass('shadow-red-200');
-            $(shadow).addClass('shadow-slate-700');
-            $('.About_section > div > img').removeClass('border-darker-teal');
-            $('.About_section > div > img').addClass('border-lighter-teal');
+            $(shadow).addClass('shadow-red-200');
+            $('.my_image').removeClass('border-darker-teal');
+            $('.my_image').addClass('border-grey');
             $('.About_section > div').addClass('bg-darker-teal text-white');
             $('.About_section > div').removeClass('bg-white');
             $(removeDarkerTeal).removeClass('text-darker-teal');
@@ -97,8 +105,8 @@ $(document).ready(function() {
              $(removeBlackhey).removeClass('text-blackhey');
     
             //  project section 
-            $(projectBg).removeClass('bg-white text-blackhey');
-            $(projectBg).addClass('bg-darker-teal text-grey');
+            $(projectBg).removeClass('bg-white text-black');
+            $(projectBg).addClass('bg-choco text-grey');
             $(projectLink).removeClass('bg-darker-teal');
             $(projectLink).addClass('bg-maroon');
 
@@ -108,7 +116,7 @@ $(document).ready(function() {
 
             // resume section 
             $(resumeBg).removeClass('bg-darker-teal');
-            $(resumeBg).addClass('bg-maroon');
+            $(resumeBg).addClass('bg-maroon shadow-red-200');
             
             
         }

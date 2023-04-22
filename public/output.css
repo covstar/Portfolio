@@ -519,9 +519,8 @@ video {
 
 body{
   position: relative;
-  background-image: url('https://covstar.sirv.com/Portfolio_imgs/M_project.jpg');
+  background-image: url('https://covstar.sirv.com/Portfolio_imgs/code.jfif');
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   padding-bottom: 6rem;
   font-family: Open Sans;
@@ -532,7 +531,7 @@ body{
   z-index: -10;
   height: 100%;
   width: 100%;
-  background-color: rgb(174 254 255 / var(--tw-bg-opacity));
+  background-color: rgb(203 228 222 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.7;
 }
 
@@ -695,6 +694,9 @@ body{
 
 header{
   position: relative;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(240 238 237 / var(--tw-border-opacity));
   --tw-bg-opacity: 0.9;
 }
 
@@ -723,7 +725,7 @@ header{
   z-index: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.8;
 }
 
@@ -832,7 +834,7 @@ header{
   }
 }
 
-.About_section img{
+.my_image{
   margin-left: auto;
   margin-right: auto;
   border-radius: 9999px;
@@ -842,21 +844,21 @@ header{
 }
 
 @media (max-width: 720px){
-  .About_section img{
+  .my_image{
     height: 10rem;
     width: 10rem;
   }
 }
 
 @media (min-width: 722px){
-  .About_section img{
+  .my_image{
     height: 16rem;
     width: 16rem;
   }
 }
 
 @media (min-width: 721px) and (max-width: 1111px){
-  .About_section img{
+  .my_image{
     height: 13rem;
     width: 13rem;
   }
@@ -866,7 +868,7 @@ header{
   border-radius: 0.125rem;
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(51 44 57 / var(--tw-text-opacity));
+  color: rgb(44 51 51 / var(--tw-text-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -965,7 +967,7 @@ header{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(51 44 57 / var(--tw-text-opacity));
+  color: rgb(44 51 51 / var(--tw-text-opacity));
 }
 
 @media (max-width: 720px){
@@ -1083,6 +1085,13 @@ header{
   }
 }
 
+@media (max-width: 393px){
+  .project_container p{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .flex_project_container{
   display: flex;
   -moz-column-gap: 1rem;
@@ -1113,7 +1122,7 @@ header{
   }
 }
 
-.resume_section a{
+.resume_button{
   border-radius: 0.375rem;
   --tw-border-opacity: 1;
   border-color: rgb(201 44 109 / var(--tw-border-opacity));
@@ -1130,7 +1139,7 @@ header{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #332c39;
+  --tw-shadow-color: #2C3333;
   --tw-shadow: var(--tw-shadow-colored);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1138,7 +1147,7 @@ header{
   transition-delay: 200ms;
 }
 
-.resume_section a:hover{
+.resume_button:hover{
   border-width: 2px;
   --tw-bg-opacity: 1;
   background-color: rgb(240 238 237 / var(--tw-bg-opacity));
@@ -1147,7 +1156,7 @@ header{
 }
 
 @media (max-width: 720px){
-  .resume_section a{
+  .resume_button{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
@@ -1359,9 +1368,23 @@ header{
   border-radius: 0.125rem;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-maroon{
   --tw-border-opacity: 1;
   border-color: rgb(201 44 109 / var(--tw-border-opacity));
+}
+
+.border-t-grey{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(240 238 237 / var(--tw-border-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-dark-teal{
@@ -1387,6 +1410,16 @@ header{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-choco{
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 78 79 / var(--tw-bg-opacity));
+}
+
+.bg-army-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 54 57 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-0{
@@ -1500,7 +1533,7 @@ header{
 
 .text-blackhey{
   --tw-text-opacity: 1;
-  color: rgb(51 44 57 / var(--tw-text-opacity));
+  color: rgb(44 51 51 / var(--tw-text-opacity));
 }
 
 .text-dark-teal{
@@ -1525,7 +1558,7 @@ header{
 
 .text-lighter-teal{
   --tw-text-opacity: 1;
-  color: rgb(174 254 255 / var(--tw-text-opacity));
+  color: rgb(203 228 222 / var(--tw-text-opacity));
 }
 
 .text-maroon{

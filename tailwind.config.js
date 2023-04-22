@@ -24,11 +24,13 @@ module.exports = {
       current: 'currentColor',
       'grey': '#f0eeed',
       'maroon': '#c92c6d',
-      'blackhey': '#332c39',
+      'blackhey': '#2C3333',
       'darker-teal': '#072227',
       'dark-teal': '#35858b',
-      'light-teal': '#4fbdba',
-      'lighter-teal': '#aefeff',
+      'choco': '#3F4E4F',
+      'lighter-teal': '#CBE4DE',
+      'dark-green': '#263A29',
+      'army-green': '#2C3639',
     },
       dropShadow: {
         red: '0 1px 2px rgb(185, 28, 28)',
@@ -80,7 +82,7 @@ module.exports = {
       },
       backgroundImage: {
         'img': "url('../images/bg-pattern.svg')",
-        'headImg': "url('https://covstar.sirv.com/Portfolio_imgs/M_project.jpg')",
+        'headImg': "url('https://covstar.sirv.com/Portfolio_imgs/code.jfif')",
 
       },
     },
