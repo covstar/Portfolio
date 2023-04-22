@@ -120,6 +120,6 @@ $(document).ready(function() {
          $(resumeBg).removeClass('bg-darker-teal');
          $(resumeBg).addClass('bg-maroon shadow-red-200');
       } 
-    }, 30000); // execute the code every 5 seconds
+    }, 5000); // execute the code every 5 seconds
   });
   
