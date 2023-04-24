@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setInterval(function() {
+
 
              // for about section 
         let shadow = '.About_section > div > div, .About_section > div > p';
@@ -120,6 +120,6 @@ $(document).ready(function() {
          $(resumeBg).removeClass('bg-darker-teal');
          $(resumeBg).addClass('bg-maroon shadow-red-200');
       } 
-    }, 5000); // execute the code every 5 seconds
+
   });
   
