@@ -5,9 +5,7 @@ header{
 
 }
 
-.profile img{
-    transform: scaleX(-1);
-}
+
 
 .active{
     background-color: white;
