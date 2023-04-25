@@ -75,7 +75,7 @@ header{
 
 /* project sections */
 .project_container{
-    @apply md:flex gap-x-12  mb-10% p-4 sm:p-2 bg-white text-blackhey w-full
+    @apply md:flex gap-x-12  mb-10% p-4 sm:p-2 bg-white text-blackhey w-full rounded-[5px] border-e-4 border-s-4
 }
 .project_container img{
     @apply rounded-md border-maroon border-2
