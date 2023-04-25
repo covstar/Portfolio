@@ -39,9 +39,9 @@ header{
 
 /* Apply the animation to the image */
 .boy_laptop {
-    animation-name: moveUpAndDown;
+    
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    filter: hue-rotate(170deg);
+    transform: scaleX(-1);
 }
