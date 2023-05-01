@@ -18,7 +18,7 @@ $(document).ready(function() {
             $(this).addClass('text-lighter-teal');
             // body overlay 
             $('.body_overlay').removeClass('bg-army-green');
-            $('.body_overlay').addClass('bg-lighter-teal');
+            $('.body_overlay').addClass('bg-white');
             // header_overlay 
             $('header').removeClass('border-b border-b-grey');
             $('.header_overlay').addClass('bg-dark-green bg-opacity-80');
@@ -71,7 +71,7 @@ $(document).ready(function() {
             $(this).removeClass('text-lighter-teal');
             $(this).addClass('text-gray-700');
             // body overlay 
-            $('.body_overlay').removeClass('bg-lighter-teal');
+            $('.body_overlay').removeClass('bg-white');
             $('.body_overlay').addClass('bg-army-green');
             // header_overlay
             $('header').addClass('border-b border-b-grey');
