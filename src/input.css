@@ -57,7 +57,7 @@ header{
     @apply md:my-3% md:px-8 sm:my-10% sm:px-4 md:grid grid-cols-2 tb:grid-cols-1 tb:grid-rows-1 tb:px-10% gap-x-16 gap-y-6 
 }
 .my_image {
-    @apply rounded-full md:w-64 md:h-64 tb:w-52 tb:h-52 sm:w-40 sm:h-40 border-4 border-darker-teal mx-auto
+    @apply rounded-full md:w-64 md:h-64 tb:w-52 tb:h-52 sm:w-40 sm:h-40 border-e-4 border-s-4 border-darker-teal mx-auto
 }
 .about_me{
     @apply  sm:text-sm xs:text-xs sm:leading-6 shadow-md shadow-red-200 rounded-sm p-4 text-blackhey
