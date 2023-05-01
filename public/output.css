@@ -522,7 +522,6 @@ video {
 
 body{
   position: relative;
-  background-image: url('https://covstar.sirv.com/Portfolio_imgs/code.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 6rem;
@@ -1388,6 +1387,11 @@ header{
   border-color: rgb(240 238 237 / var(--tw-border-opacity));
 }
 
+.border-darker-teal{
+  --tw-border-opacity: 1;
+  border-color: rgb(7 34 39 / var(--tw-border-opacity));
+}
+
 .border-t-grey{
   --tw-border-opacity: 1;
   border-top-color: rgb(240 238 237 / var(--tw-border-opacity));
@@ -1580,6 +1584,16 @@ header{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-700{
+  --tw-text-opacity: 1;
+  color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .opacity-20{

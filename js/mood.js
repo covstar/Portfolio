@@ -15,7 +15,8 @@ $(document).ready(function() {
 
 
         if ($(this).hasClass('fa-cloud-sun')) {
-            $(this).addClass('text-lighter-teal');
+            $(this).addClass('text-yellow-500');
+            $(this).removeClass('text-gray-700');
             // body overlay 
             $('.body_overlay').removeClass('bg-army-green');
             $('.body_overlay').addClass('bg-white');
@@ -68,7 +69,7 @@ $(document).ready(function() {
 
         }
         else if ($(this).hasClass('fa-moon')) {
-            $(this).removeClass('text-lighter-teal');
+            $(this).removeClass('text-yellow-500');
             $(this).addClass('text-gray-700');
             // body overlay 
             $('.body_overlay').removeClass('bg-white');

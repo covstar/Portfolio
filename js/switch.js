@@ -15,8 +15,8 @@ $(document).ready(function() {
   
       if (currentTime >= 6 && currentTime < 18) {
         // Execute code between 6:00 AM and 6:00 PM
-        $('.toggle').addClass('fa-cloud-sun text-lighter-teal');
-        $('.toggle').removeClass('fa-moon');
+        $('.toggle').addClass('fa-cloud-sun text-yellow-500');
+        $('.toggle').removeClass('fa-moon text-gray-700');
         // body overlay 
         $('.body_overlay').removeClass('bg-army-green');
         $('.body_overlay').addClass('bg-white');
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
       } else {
         // Execute code between 6:00 PM and 6:00 AM
-       $('.toggle').removeClass('fa-cloud-sun text-lighter-teal');
+       $('.toggle').removeClass('fa-cloud-sun text-yellow-500');
         $('.toggle').addClass('fa-moon text-gray-700');
          // body overlay 
          $('.body_overlay').removeClass('bg-white');

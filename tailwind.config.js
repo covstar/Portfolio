@@ -82,8 +82,6 @@ module.exports = {
       },
       backgroundImage: {
         'img': "url('../images/bg-pattern.svg')",
-        'headImg': "url('https://covstar.sirv.com/Portfolio_imgs/code.jfif')",
-
       },
     },
   },
