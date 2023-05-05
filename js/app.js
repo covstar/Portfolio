@@ -60,5 +60,6 @@ $(document).ready(function(){
         $ ('.contact_for_heading').show();
     });
 
+    AOS.init();
 });
 

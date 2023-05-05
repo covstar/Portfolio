@@ -10,9 +10,8 @@
     <link rel="shortcut icon" href="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg"  type="image/x-icon" >
     <!-- css links  -->
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
-        integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/output.css">
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -70,7 +69,8 @@
         <!-- Header writer up -->
         <div class="md:flex sm:block">
 
-            <div class="header_text xs:text-xs">
+            <div class="header_text xs:text-xs" data-aos="fade-right"
+            data-aos-duration="2000">
             
                 <p class="hi_covstar">Hi! I'm Covstar, </p>
                 <p class="experienced_dev">An Experienced Frontend Web Developer.</p>
@@ -82,7 +82,8 @@
             </div>
 
             <!-- header image  -->
-            <div class="header_img_container_1">
+            <div class="header_img_container_1" data-aos="slide-left"
+            data-aos-duration="2000">
                 <img class="boy_laptop" src="https://covstar.sirv.com/Portfolio_imgs/iDesign.png" alt="boy_laptop">
             </div>
 
@@ -90,7 +91,8 @@
         
 
         <!-- nav link and image display for smaller screens  -->
-        <div class="xs:flex  xs:w-full">
+        <div class="xs:flex  xs:w-full" data-aos="fade-right"
+        data-aos-duration="2000">
             <!-- nav links  -->
             <nav class="nav_link">
                 <ul>
@@ -113,7 +115,8 @@
                 </ul>
             </nav>
             <!-- header image  -->
-            <div class="header_img_container_2">
+            <div class="header_img_container_2" data-aos="slide-left"
+            data-aos-duration="2000">
                 <img class="boy_laptop" src="https://covstar.sirv.com/Portfolio_imgs/iDesign.png" alt="boy_laptop">
             </div>
 
@@ -124,7 +127,9 @@
     <!-- About me section -->
     <section class="About_section">
 
-        <div class="mx-auto my-auto sm:mb-8 bg-opacity-0">
+        <div class="mx-auto my-auto sm:mb-8 bg-opacity-0" data-aos="flip-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <img class="my_image" src="https://covstar.sirv.com/Portfolio_imgs/covstar.jpg" alt="">
         </div>
         <!-- bio summary -->
@@ -631,7 +636,8 @@
     </div> -->
 
     <!-- scroll to top button  -->
-    <button aria-label="scrollTop" type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-dark-teal text-grey px-2 rounded"></i></button>
+    <button data-aos="slide-up"
+    data-aos-duration="2000" aria-label="scrollTop" type="button" class="scrollTop sm:right-4 right-8 fixed z-50 bottom-10"><i class="fa fa-angle-up text-2xl bg-dark-teal text-grey px-2 rounded"></i></button>
 
     <!-- whatsapp  -->
     <div class="fixed bottom-24 right-4 sm:right-3 z-50">
@@ -650,6 +656,7 @@
     <script src="./js/location.js"></script>
     <script src="./js/mood.js"></script>
     <script src="./js/switch.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
